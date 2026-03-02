@@ -9,7 +9,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
@@ -24,7 +24,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
@@ -39,7 +39,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
@@ -54,7 +54,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
@@ -69,7 +69,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
@@ -84,7 +84,7 @@ jobs:
           last_directory=$(basename ${{ runner.workspace }})
           git clone https://github.com/${{ github.repository }}.git
           cd ./$last_directory
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
